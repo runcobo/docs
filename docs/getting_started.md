@@ -38,3 +38,10 @@ crystal src/demo.cr
 ```shell
 curl "http://0.0.0.0:3000/api/v1/add?a=1&b=2"
 ```
+
+6.Auto restart server.
+```shell
+# Use nodemon to watch file changed and auto restart server.
+sudo npm install -g nodemon
+nodemon -e "cr,water,jbuilder,yml" --exec "crystal run" src/demo.cr
+```

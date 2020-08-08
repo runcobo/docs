@@ -19,13 +19,13 @@ end
 
 ### After Filter
 ```crystal
-class BeforeExample < BaseAction
+class AfterExample < BaseAction
   after log_params
   def log_params
     Runcobo::Log.info { "#{params}" }
   end
 
-  get "/before_example"
+  get "/after_example"
   call do
     render_plain "Hello World!"
   end
@@ -44,7 +44,7 @@ end
 class SkipExample < BaseAction
   skip required_login
 
-  get "/before_example"
+  get "/skip_example"
   call do
     render_plain "Hello World!"
   end
