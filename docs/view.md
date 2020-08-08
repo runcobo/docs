@@ -13,7 +13,7 @@ This is because the views are compiled in the same scope as the action.
 You can override the default layout conventions in your actions by using the layout declaration. For example:
 ```crystal
 class BaseAction
-  LAYOUT = "application.jbuilder"
+  layout "application"
   #...
 end
 ```
