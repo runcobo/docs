@@ -33,6 +33,8 @@ runcobo [<commands>...] [<arguments>...]
     shards.yml          # The packages congfiuration file
     shards.lock         # The lock file for packages congfiuration file
 
+Keep in this architecture to use `layouts` macro, `render` macro.
+
 ### Design Architecture
 MVC (Model-View-Controller)
 
