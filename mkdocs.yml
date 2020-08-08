@@ -1,0 +1,54 @@
+# Project Information
+site_name: Runcobo
+site_url: https://runcobo.github.io/
+site_author: Runcobo Community
+site_description: Runcobo documentation (web framework for Crystal).
+
+# Repository
+repo_name: Runcobo Github
+repo_url: https://github.com/runcobo/runcobo
+
+# Copyright
+copyright: "Copyright &copy; Runcobo Community"
+
+# Configuration
+theme:
+  name: material
+  language: en
+
+  palette:
+    primary: cyan
+
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/runcobo/runcobo
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+
+nav:
+  - Introduction: "index.md"
+  - Installation: "installation.md"
+  - Getting Started: "getting_started.md"
+  - Route: "route.md"
+  - Action: 
+    - Overview: "action.md"
+    - Params: "params.md"
+    - Render: "render.md"
+  - View:
+    - Overview: "view.md"
+    - JSON: "json.md"
+    - HTML: "html.md"
+  - Model:
+    - Overview: "model.md"
